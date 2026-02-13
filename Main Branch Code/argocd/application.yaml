@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/KastroVKiran/k8s-multi-app.git
+    repoURL: https://github.com/juhisinha422/Production-Grade-CI-CD-Pipeline-using-Jenkins-Multibranch-GitOps.git
     targetRevision: main
     path: k8s
 
