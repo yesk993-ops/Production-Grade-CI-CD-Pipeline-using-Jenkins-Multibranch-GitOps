@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.pem
+*.key
+*.txt
+
+# Kubernetes
+.kube/
+
+# AWS
+.aws/
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+
+# OS
+.DS_Store
+
