@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: movie-app
+  name: shopeasy
   namespace: default
 spec:
   replicas: 5
@@ -14,7 +14,7 @@ spec:
         app: movie-app
     spec:
       containers:
-      - name: movie-app
-        image: kastrov/multibranch-flask-app:build-61
+      - name: shopeasy
+        image: juhisinha/shopeasy:v1
         ports:
         - containerPort: 5000
