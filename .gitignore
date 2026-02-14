@@ -1,4 +1,4 @@
-# Secret
+# Secrets
 .env
 *.pem
 *.key
