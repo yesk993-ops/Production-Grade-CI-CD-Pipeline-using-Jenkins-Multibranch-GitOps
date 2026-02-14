@@ -79,7 +79,7 @@ LoadBalancer URL → Live Application
 | 🔄 **Argo CD**                      | GitOps-based Continuous Deployment              |
 | 🌐 **LoadBalancer Service**         | External Application Access                     |
 
-
+## Project Screenshots
 
 <img width="1873" height="906" alt="Image" src="https://github.com/user-attachments/assets/4aad0a82-ed76-4b58-a5cf-b98248c8a889" />
 
