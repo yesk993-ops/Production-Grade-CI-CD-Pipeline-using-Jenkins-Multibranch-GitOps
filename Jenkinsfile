@@ -6,9 +6,9 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "juhisinha/multibranch-flask-app"
-        GIT_USER   = "juhisinha422"
-        GIT_EMAIL  = "juhisinha422@gmail.com"
+        IMAGE_NAME = "mydocker3692/multibranch-flask-app"
+        GIT_USER   = "kdb"
+        GIT_EMAIL  = "test@gmail.com"
     }
 
     stages {
@@ -26,7 +26,7 @@ pipeline {
                     env.IMAGE_TAG = "build-${BUILD_NUMBER}"
 
                     withCredentials([usernamePassword(
-                        credentialsId: 'dockerhub-creds',
+                        credentialsId: 'docker',
                         usernameVariable: 'DOCKER_USER',
                         passwordVariable: 'DOCKER_PASS'
                     )]) {
@@ -62,7 +62,7 @@ pipeline {
 
                         git add k8s/deployment.yml
                         git diff --cached --quiet || git commit -m "Updated image to ${IMAGE_TAG}"
-                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/juhisinha422/Production-Grade-CI-CD-Pipeline-using-Jenkins-Multibranch-GitOps.git
+                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/yesk993-ops/Production-Grade-CI-CD-Pipeline-using-Jenkins-Multibranch-GitOps.git
                         """
                     }
                 }
